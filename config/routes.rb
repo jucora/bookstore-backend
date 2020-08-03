@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'books/index'
   get 'books/show'
   post 'books/create'
-  delete 'books/destroy'
+  delete 'books/destroy/:book_id', to: 'books#destroy'
 
 
 
