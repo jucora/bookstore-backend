@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   def index
-    books = Book.all
-    render json: {status: 'SUCCESS', message: 'All books', data: books}, status: :ok 
+    books = Book.joins(:category).select('books.id, books.title, books.author, books.percentage,categories.name as category_name')
+    render json: {status: 'SUCCESS', message: 'All books', books: books}, status: :ok 
   end
 
   def create
