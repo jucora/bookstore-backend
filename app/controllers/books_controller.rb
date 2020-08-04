@@ -11,6 +11,7 @@ class BooksController < ApplicationController
     if book.save
       render json: {status: 'SUCCESS', message: 'Book created!', data: book}, status: :ok 
     else
+      p book.errors.full_messages
       render json: {status: 'ERROR', message: 'Book was not created!', data: book}, status: :unprocessable_entity 
     end
     
@@ -18,7 +19,7 @@ class BooksController < ApplicationController
 
   def destroy
     Book.find(params[:book_id]).destroy
-    render json: {status: 'SUCCESS', message: 'Book removed', data: ''}, status: :ok
+    render json: {status: 'SUCCESS', message: 'Book removed', data: params[:book_id]}, status: :ok
   end
 
   private 
