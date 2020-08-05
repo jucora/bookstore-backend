@@ -20,18 +20,18 @@ This project is an API developed in Ruby on Rails. Contains information on books
 
 For more information about the project requirements, please follow the next link: [Bookstore API](https://github.com/microverseinc/project-redux-bookstore/blob/master/milestones/MILESTONE_6.md)
 
-## :lock_with_ink_pen: Bookstore frontend
+## :mag: Bookstore frontend
 
 Click the next link to access to the app [Frontend](https://github.com/xtrmdarc/bookstore-cms)
 
-## How to install the App
+## How to install the API
 
 1. Please clone the repository by running the next comand in your machine:
 
 <pre><code>git clone https://github.com/jucora/bookstore-backend.git</code></pre>
 
 
-## How to run the app locally
+## How to run the API locally
 
 1. Get into the folder of the project by running the next command:
 
