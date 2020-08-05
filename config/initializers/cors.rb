@@ -5,7 +5,6 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-Rails.application.config.hosts << "*"
 
 Rails.application.config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
   allow do
